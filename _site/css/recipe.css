@@ -1,0 +1,137 @@
+/*---Recipe Page---*/
+
+.article-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  width: 80%;
+}
+
+.title-section {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.title-section h1 {
+  font: normal 600 "Kanit", sans-serif;
+  color: #bc4749;
+  margin: 0;
+  text-align: center;
+}
+
+.recipe-image {
+  height: auto;
+  max-width: 100%;
+}
+
+.recipe-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 1 fraction for prep/ingredients, 2 fractions for instructions */
+  grid-template-rows: auto; /* Rows size to fit content */
+  gap: 15px;
+  margin: auto;
+  width: 80%;
+}
+
+#introduction {
+  font-size: 22px;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+#preparation {
+  border: 1px solid #212529;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+#recipe-information {
+  grid-column: 1; /* Take the first column, which is narrower */
+  grid-row: 2;
+}
+
+#instructions {
+  grid-column: 2; /* Take the second column, which is wider */
+  grid-row: 2;
+}
+
+#preparation ul {
+  list-style-type: none;
+  padding-left: 25px;
+}
+
+#preparation i {
+  color: #bc4749;
+  padding-right: 5px;
+}
+
+#ingredients {
+  border: 1px solid #212529;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#ingredients ul {
+  padding-left: 25px;
+}
+
+#ingredients h2,
+#preparation h2 {
+  color: #bc4749;
+  font: normal 600 "Kanit", sans-serif;
+  margin: 5px 0;
+  padding-left: 25px;
+  text-decoration: underline;
+}
+#instructions {
+  font-size: 21px;
+  padding: 0 5px;
+}
+
+#instructions h2 {
+  color: #bc4749;
+  font: normal 600 "Kanit", sans-serif;
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+/*-- iFrame settings --*/
+#video-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  width: 100%;
+}
+
+#video-container #video {
+  height: 400px;
+  width: 60%;
+}
+
+/*-- responsive resizing --*/
+
+@media (max-width: 800px) {
+  .article-container {
+    flex-direction: column;
+  }
+  .recipe-container li,
+  .article-container p {
+    font-size: small;
+  }
+  .recipe-container {
+    width: 90%;
+  }
+  .recipe-container h2 {
+    font-size: smaller;
+  }
+  #video-container #video {
+    width: 80%;
+    height: 200px;
+  }
+}

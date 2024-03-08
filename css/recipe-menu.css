@@ -1,0 +1,47 @@
+/*---Recipe Menu Page---*/
+
+.landing-image {
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+}
+
+.menu-text {
+  padding-top: 2rem;
+  text-align: center;
+}
+.menu-text h2 {
+  color: #bc4749;
+  font: normal 600 30px "Kanit", sans-serif;
+  margin-top: 10px;
+}
+
+.menu-recipe-cards {
+  display: grid;
+  grid-template-areas:
+    "recipe-card recipe-card recipe-card"
+    "recipe-card recipe-card recipe-card";
+  gap: 15px;
+  justify-content: center;
+  margin: auto;
+  padding-top: 30px;
+  width: 90%;
+}
+
+/*-- Responsive resizing --*/
+
+@media (max-width: 800px) {
+  .navbar h2 {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .navbar a {
+    font-size: 15px;
+  }
+  .menu-recipe-cards {
+    grid-template-areas:
+      "recipe-card recipe-card"
+      "recipe-card recipe-card"
+      "recipe-card recipe-card";
+  }
+}
