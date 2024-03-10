@@ -8,32 +8,40 @@ body {
 
 /*--- Nav Bar ---*/
 .navbar {
+  align-items: center;
   box-sizing: border-box;
   border-bottom: 1px solid #212529;
+  display: flex;
+  justify-content: space-between;
   overflow: hidden;
   text-align: center;
-  width: auto;
+  width: 100%;
 }
 
 .navbar h2 {
   color: #bc4749;
   font: normal 600 30px "Kanit", sans-serif;
-  float: left;
   margin: 0;
-  padding-top: 7px;
-  padding-left: 1%;
 }
 
-.navbar a {
+.nav-links{
+  list-style: none;
+
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
   color: #212529;
   cursor: pointer;
-  float: right;
   font: normal 600 20px "Kanit", sans-serif;
-  padding: 12px 20px;
+  padding: 16px 20px 11px 20px;
   text-decoration: none;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
   background-color: #bc4749;
   color: #f8f9fa;
   opacity: 0.9;
@@ -41,6 +49,7 @@ body {
 }
 
 .active {
+  z-index: 2;
   border-bottom: 5px solid #5f8d37;
 }
 
@@ -110,7 +119,6 @@ footer {
 @media (max-width: 800px) {
   .navbar h2 {
     font-size: 18px;
-    padding-top: 10px;
   }
   .navbar a {
     font-size: 15px;
