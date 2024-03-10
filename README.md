@@ -24,6 +24,17 @@ This page provides access to all of the recipes on the site. Card templates are 
 ### Recipe Page
 This template page contains the recipe information. The page contains an image, title and introduction along with sections for preparation information, ingredients and instructions. In some instances, there will be a video embeded. There is also a navigation bar and footer.
 
+## Design
+
+### Intention
+The design intention was to create a well laid out and simple website to allow for easy navigation. Aesthetically, the theme was choosen to emulate traditional Neapolitan pizza and to allow the images of food take centre stage.
+
+### Colours Used
+![Palette](./images/colour-palette.png)
+
+### Font
+[Merriweather](https://fonts.google.com/specimen/Merriweather?query=Merriweather)
+
 ## Technologies used
 
 - [HTML5](https://html.com/html5/) as the main language to produce the pages
