@@ -28,8 +28,8 @@
 
 .recipe-container {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* 1 fraction for prep/ingredients, 2 fractions for instructions */
-  grid-template-rows: auto; /* Rows size to fit content */
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
   gap: 15px;
   margin: auto;
   width: 80%;
@@ -50,12 +50,12 @@
 }
 
 #recipe-information {
-  grid-column: 1; /* Take the first column, which is narrower */
+  grid-column: 1;
   grid-row: 2;
 }
 
 #instructions {
-  grid-column: 2; /* Take the second column, which is wider */
+  grid-column: 2;
   grid-row: 2;
 }
 
@@ -78,6 +78,14 @@
 
 #ingredients ul {
   padding-left: 25px;
+}
+
+.ingredient-link {
+  color: #212529;
+}
+
+.ingredient-link:hover {
+  color: #bc4749;
 }
 
 #ingredients h2,
